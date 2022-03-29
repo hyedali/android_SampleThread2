@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    class MainHandler extends Handler{
+    class MainHandler extends Handler {
         //코드가 수행되는 위치는 새로 만든 스레드가 아닌 메인 스레드가 됨
         @Override
         public void handleMessage(@NonNull Message msg) {
@@ -64,5 +64,5 @@ public class MainActivity extends AppCompatActivity {
             int value = bundle.getInt("value"); //value이름으로 된 정수형 데이터 저장
             textView.setText("value의 값 : " + value); //메인 스레드의 textView객체의 setText변경경
         }
-
+    }
 }
